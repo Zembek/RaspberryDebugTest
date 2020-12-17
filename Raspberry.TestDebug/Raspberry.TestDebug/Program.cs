@@ -9,15 +9,12 @@ namespace Raspberry.TestDebug
         {
             Console.WriteLine("App is up");
 #if DEBUG
-            while (true)
-            {
-                Console.WriteLine("Waiting for VS");
-                Thread.Sleep(1000);
-            }
-#endif
-            var tmp = 0;
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Press any key to continue");
             Console.ReadKey();
+#endif
+            Console.WriteLine("Please write something");
+            string test = Console.ReadLine();
+            Console.WriteLine("Hello World!");
         }
     }
 }
