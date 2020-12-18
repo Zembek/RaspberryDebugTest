@@ -13,7 +13,7 @@ namespace Raspberry.TestDebug
         {
             Console.WriteLine("App is up");
 #if DEBUG
-            Console.WriteLine("Press any key to continue");
+            Console.WriteLine("Waiting for debugger. Press any key to continue");
             Console.ReadKey();
 #endif
             GpioController controller = new GpioController();
